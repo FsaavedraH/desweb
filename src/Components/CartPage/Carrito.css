@@ -1,0 +1,115 @@
+/* Carrito.css - Razer-style theme */
+
+.carrito {
+  background-color: #0b0c10; /* Very dark background */
+  color: #c5c6c7; /* Light grey text */
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 15px #00ff00aa; /* subtle neon green glow */
+}
+
+.invoice-title {
+  color: #00ff00; /* neon green */
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px #00ff00;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #c5c6c7;
+}
+
+.invoice-table th,
+.invoice-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #222;
+}
+
+.invoice-table th {
+  text-align: left;
+  background-color: #1f2833;
+  color: #00ff00;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00ff00;
+}
+
+.invoice-table tbody tr:hover {
+  background-color: #0c0f12;
+  box-shadow: inset 0 0 10px #00ff00aa;
+}
+
+.invoice-table td {
+  text-align: left;
+}
+
+.invoice-table td:nth-child(2),
+.invoice-table td:nth-child(3),
+.invoice-table td:nth-child(4) {
+  text-align: right;
+}
+
+.invoice-table button {
+  background: none;
+  border: none;
+  color: #ff4444;
+  font-weight: 900;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.invoice-table button:hover {
+  color: #ff0000;
+}
+
+.invoice-summary {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00ff00;
+  border-top: 2px solid #00ff00;
+  padding-top: 15px;
+}
+
+.invoice-summary p {
+  margin: 8px 0;
+}
+
+#fin {
+  margin-top: 30px;
+  background-color: #00ff00;
+  color: #0b0c10;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 15px #00ff00aa;
+}
+
+#fin:hover {
+  background-color: #1aff1a;
+  color: #000;
+  box-shadow: 0 0 25px #00ff00;
+}
+
+.empty-message {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  margin-top: 40px;
+}

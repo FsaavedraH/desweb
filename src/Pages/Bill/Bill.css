@@ -1,0 +1,214 @@
+:root {
+  --razer-green: #44d62c;
+  --razer-green-darker: #36b524;
+  --razer-black: #111111;
+  --razer-dark-gray: #1a1a1a;
+  --razer-gray: #2b2b2b;
+  --razer-light-gray: #3a3a3a;
+  --razer-text-light: #ffffff;
+  --razer-border: #444444;
+  --razer-yellow: #ffda1a;
+  --razer-yellow-hover: #f0cd13;
+  --razer-success-green: #4caf50;
+  --razer-success-green-darker: #388e3c;
+}
+
+.factura {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--razer-dark-gray);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(68, 214, 44, 0.4);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--razer-text-light);
+  border: 1px solid var(--razer-border);
+}
+
+.factura h2 {
+  text-align: center;
+  color: var(--razer-green);
+  margin-bottom: 1.8rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(68, 214, 44, 0.7);
+}
+
+.factura p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--razer-text-light);
+  opacity: 0.9;
+}
+
+.factura p strong {
+  color: var(--razer-green);
+  font-weight: 700;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.factura ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.8rem 0;
+  border-top: 1px solid var(--razer-border);
+  border-bottom: 1px solid var(--razer-border);
+  padding: 1rem 0;
+}
+
+.factura li {
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--razer-text-light);
+  opacity: 0.85;
+}
+
+.factura li:not(:last-child) {
+  border-bottom: 1px dashed var(--razer-border);
+}
+
+.factura h3 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+  text-align: right;
+  font-size: 1.1rem;
+  color: var(--razer-green);
+  text-shadow: 0 0 5px rgba(68, 214, 44, 0.6);
+}
+
+.factura h2:last-of-type {
+  margin-top: 1.5rem;
+  font-weight: 800;
+  text-align: right;
+  font-size: 1.7rem;
+  color: var(--razer-green);
+  padding-top: 1rem;
+  border-top: 2px solid var(--razer-yellow);
+  text-shadow: 0 0 8px rgba(255, 218, 26, 0.7);
+}
+
+.finalizar-btn {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--razer-yellow);
+  border: none;
+  color: var(--razer-black);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(255, 218, 26, 0.8);
+}
+
+.finalizar-btn:hover {
+  background-color: var(--razer-yellow-hover);
+  box-shadow: 0 0 16px rgba(240, 205, 19, 1);
+}
+
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.success-content {
+  background-color: var(--razer-dark-gray);
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(68, 214, 44, 0.7);
+  max-width: 380px;
+  border-top: 5px solid var(--razer-success-green);
+  color: var(--razer-text-light);
+  font-weight: 600;
+}
+
+.success-content h3 {
+  color: var(--razer-success-green);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(76, 175, 80, 0.9);
+}
+
+.success-content p {
+  color: var(--razer-text-light);
+  opacity: 0.9;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.success-content::before {
+  content: "✓"; /* Puedes reemplazar por un SVG si quieres */
+  display: block;
+  font-size: 3.5rem;
+  color: var(--razer-success-green);
+  margin-bottom: 1.5rem;
+  line-height: 1;
+  text-shadow: 0 0 12px rgba(76, 175, 80, 0.9);
+}
+
+@media (max-width: 640px) {
+  .factura {
+    padding: 1.8rem;
+    margin: 1.5rem;
+  }
+  
+  .factura h2 {
+    font-size: 1.7rem;
+  }
+  
+  .factura p {
+    font-size: 0.95rem;
+  }
+  
+  .factura p strong {
+    min-width: 100px;
+  }
+  
+  .factura h2:last-of-type {
+    font-size: 1.5rem;
+  }
+  
+  .finalizar-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .success-content {
+    padding: 2rem;
+    max-width: calc(100% - 2rem);
+  }
+  
+  .success-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .success-content::before {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}

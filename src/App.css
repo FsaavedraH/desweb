@@ -1,0 +1,266 @@
+:root {
+  --razer-black: #121212;
+  --razer-dark-gray: #1e1e1e;
+  --razer-light-gray: #2c2c2c;
+  --razer-neon-green: #44d62c;
+  --razer-white: #ffffff;
+  --razer-gray-text: #b0b0b0;
+  --razer-border: #333333;
+  --razer-red: #e74c3c;
+  --razer-footer-bg: #000000;
+  --razer-footer-text: #888888;
+  --razer-footer-link-hover: var(--razer-neon-green);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--razer-black);
+  color: var(--razer-white);
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  background-color: var(--razer-dark-gray);
+  color: var(--razer-neon-green);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 255, 0, 0.1);
+}
+
+.btn-carrito {
+  background-color: var(--razer-neon-green);
+  color: var(--razer-black);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.25s;
+}
+
+.btn-carrito:hover {
+  background-color: #33aa22;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--razer-dark-gray);
+}
+
+.producto {
+  background: var(--razer-light-gray);
+  border: 1px solid var(--razer-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.05);
+  text-align: center;
+  color: var(--razer-white);
+}
+
+.producto h2 {
+  color: var(--razer-neon-green);
+  font-size: 1.5em;
+}
+
+.producto p {
+  color: var(--razer-gray-text);
+}
+
+.producto button {
+  background-color: var(--razer-neon-green);
+  color: var(--razer-black);
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.producto button:hover {
+  background-color: #33aa22;
+}
+
+.carrito {
+  background: var(--razer-light-gray);
+  border: 1px solid var(--razer-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,255,0,0.05);
+  color: var(--razer-white);
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--razer-border);
+}
+
+.carrito li:last-child {
+  border-bottom: none;
+}
+
+.carrito button {
+  background-color: var(--razer-red);
+  color: var(--razer-white);
+  border: none;
+  cursor: pointer;
+}
+
+.carrito button:hover {
+  background-color: #c0392b;
+}
+
+.btn-comprar {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--razer-neon-green);
+  color: var(--razer-black);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.btn-comprar:hover {
+  background-color: #33aa22;
+}
+
+.confirmacion {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #1b2b1b;
+  color: var(--razer-neon-green);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #44d62c66;
+  text-align: center;
+}
+
+.confirmacion h2 {
+ color: var(--razer-neon-green);
+}
+
+.site-footer {
+  background-color: var(--razer-footer-bg);
+  color: var(--razer-footer-text);
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--razer-white);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-logo-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  color: var(--razer-neon-green);
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section.links ul li a {
+  color: var(--razer-footer-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section.links ul li a:hover {
+  color: var(--razer-footer-link-hover);
+  text-decoration: underline;
+}
+
+.footer-section.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section.contact-info i {
+  color: var(--razer-neon-green);
+  width: 16px;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-section.contact-info p {
+    justify-content: center;
+  }
+}

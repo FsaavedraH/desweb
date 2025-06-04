@@ -1,0 +1,103 @@
+:root {
+  --razer-green: #44d62c;
+  --razer-black: #111111;
+  --razer-dark-gray: #1a1a1a;
+  --razer-gray: #2b2b2b;
+  --razer-light-gray: #3a3a3a;
+  --razer-text-light: #ffffff;
+  --razer-border: #555555;
+}
+
+.login-page-body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--razer-black);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background-color: var(--razer-dark-gray);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 255, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--razer-border);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--razer-green);
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(68, 214, 44, 0.6);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--razer-text-light);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  background-color: var(--razer-gray);
+  display: flex;
+  width: calc(100% - 1.6rem);
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--razer-border);
+  font-size: 1rem;
+  color: var(--razer-text-light);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--razer-green);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(68, 214, 44, 0.3);
+}
+
+.login-actions {
+  margin-top: 1.8rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: var(--razer-green);
+  color: var(--razer-black);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.login-button:hover {
+  background-color: #36b524;
+  transform: scale(1.02);
+}
